@@ -23,6 +23,10 @@ a {
     position: relative;
 }
 
+.cont-item {
+    margin-bottom: 100px;
+}
+
 .row {
     padding: 0 12px;
     display: flex;
@@ -39,9 +43,10 @@ a {
 #header {
     width: 100%;
     position: fixed;
-    background-color: aqua;
+    background-color: #c2bf0f;
     font-size: 18px;
     text-transform: capitalize;
+    top: 0px;
 }
 
 #header .logo #header-img {
@@ -122,14 +127,88 @@ p {
     justify-content: center;
 }
 
-
-/* #nav-bar {
-    position: fixed;
-    top: 0px;
+#products-price {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-@media screen and (min-width: 480px) {
-    body {
-        display: flex;
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.product>.level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.product h2 {
+    margin-top: 15px;
+}
+
+.product ol {
+    margin: 15px 0;
+}
+
+.product ol li {
+    padding: 5px 0;
+}
+
+.product button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #c2bf0f;
+    font-weight: 400;
+}
+
+.product button:hover {
+    background-color: #c2bf0f;
+    transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+    #products-price {
+        flex-direction: column;
     }
-} */
+    .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul li {
+    padding: 0 10px;
+}
+
+footer>span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
