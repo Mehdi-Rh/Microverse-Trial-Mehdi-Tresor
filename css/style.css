@@ -1,1 +1,10 @@
-aaa
+#nav-bar {
+  position: fixed;
+  top: 0px;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    display: flex;
+  }
+}
